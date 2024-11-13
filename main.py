@@ -8,7 +8,7 @@ from model import train_model, predict
 def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('--data_path', type=str, required=True, help='Path to the data file')
-    parser.add_argument('--model_path', type=str, required=True, help='Path to save the trained model')
+    parser.add_argument('--model_path', type=str, required=True, help='Path to save the trained model or pull alrady trained model')
     parser.add_argument('--type', type=str, required=True, help='Train or Predict')
     return parser.parse_args()
 
